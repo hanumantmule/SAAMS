@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "821824821638",
+    "project_id": "saams-ed0e7",
+    "storage_bucket": "saams-ed0e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821824821638:android:42c672c047a662ed02f407",
+        "android_client_info": {
+          "package_name": "com.bitshift.saams"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821824821638-iom551ussjo3g9d04c6tv6pepcv14rrn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv5gnCP1pL03pDemfkez2uahNqqEIf1po"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "821824821638-iom551ussjo3g9d04c6tv6pepcv14rrn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

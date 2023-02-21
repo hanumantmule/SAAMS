@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/bg_color"
+    android:focusableInTouchMode="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/orgName"
+                android:text="Organization Name"
+                android:textSize="@dimen/_18sdp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="@color/purple_700"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/gray" />
+        </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@id/lytStaffDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp">
+
+                        <RelativeLayout
+                            android:id="@+id/lytStaffDetail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="@dimen/_100sdp"
+                                android:id="@+id/lytImgStaff"
+                                android:layout_height="@dimen/_100sdp"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_15sdp"
+                                android:background="@drawable/circle_bg"
+                                android:padding="2dp">
+
+                                <ImageView
+                                    android:id="@+id/imgProfile"
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="@dimen/_100sdp"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginEnd="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:contentDescription="@string/app_name" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/lytStaffInfo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@+id/lytImgStaff">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <RelativeLayout
+                                        android:id="@+id/lyttvStaffName"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:layout_marginBottom="@dimen/_5sdp">
+
+                                        <TextView
+                                            android:id="@+id/studentName"
+                                            android:layout_marginStart="@dimen/_15sdp"
+                                            android:text="Student Name"
+                                            android:textSize="@dimen/_20sdp"
+                                            android:textColor="@color/black"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"/>
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/lytStd"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/lyttvStaffName"
+                                        android:baselineAligned="false"
+                                        android:orientation="vertical"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:weightSum="10">
+
+                                        <LinearLayout
+                                            android:id="@+id/lytQualification"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/studStandard"
+                                                android:layout_marginStart="@dimen/_20sdp"
+                                                android:text="Standard : "
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_15sdp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"/>
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/lytRole"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/lytStd"
+                                        android:baselineAligned="false"
+                                        android:orientation="vertical"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:weightSum="10">
+
+                                        <LinearLayout
+                                            android:id="@+id/lytQualification1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/studRollNo"
+                                                android:layout_marginStart="@dimen/_20sdp"
+                                                android:text="Role No : "
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_15sdp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"/>
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/lytAddress"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/lytRole"
+                                        android:baselineAligned="false"
+                                        android:orientation="vertical"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:weightSum="10">
+
+                                        <LinearLayout
+                                            android:id="@+id/lytaddres"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/studAddress"
+                                                android:layout_marginStart="@dimen/_20sdp"
+                                                android:text="Address : "
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_15sdp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"/>
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/txtContact"
+                android:text="Contact Details :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/studPhone"
+                android:drawableStart="@drawable/ic_phone"
+                android:paddingStart="@dimen/_25sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/studEmail"
+                android:drawableStart="@drawable/ic_mail"
+                android:paddingStart="@dimen/_25sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/txtSubjects"
+                android:text="Subjects :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
